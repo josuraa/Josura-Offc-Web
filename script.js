@@ -5,7 +5,7 @@ document.getElementById('btn-BacaKetentuan').addEventListener('click', function(
         <ol><li style="text-align: left; margin-left: 3%;margin-right: 9%;">Pengerjaan akan dilakukan setelah admin konfirmasi ke pembeli</li>
               <li style="text-align: left; margin-left: 3%;margin-right: 9%;">Admin berhak menolak Joki (semua keputusan ditangan admin)</li>
               <li style="text-align: left; margin-left: 3%;margin-right: 9%;">Pelayanan diluar jam operasional akan didelay</li>
-              <li style="text-align: left; margin-left: 3%;margin-right: 9%;">Pembayaran dapat dilakukan dengan e money (0823-3083-7154)</li>
+              <li style="text-align: left; margin-left: 3%;margin-right: 9%;">Pembayaran dapat dilakukan dengan e money</li>
               </ol>
 
               Jam Operasional
