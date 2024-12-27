@@ -3,7 +3,7 @@
     src: url(font/Montserrat-VariableFont_wght.ttf);
 }
 
-@font-face{
+@font-face {
     font-family: 'Inter';
     src: url(font/Inter-Regular.ttf);
 }
@@ -12,7 +12,35 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-}  
+}
+
+.my-custom-font {
+    font-family: "Poppins", sans-serif;
+}
+
+.swal2-popup {
+    font-family: "Poppins", sans-serif;
+}
+
+.my-custom-font {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.swal2-title {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.swal2-content {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.swal2-confirm {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.swal2-deny {
+    font-family: 'Poppins', sans-serif !important;
+}
 
 .navbar-toggler {
     border: 0 !important;
@@ -26,7 +54,7 @@
     border: 0 !important;
 }
 
-.toggler-icon{
+.toggler-icon {
     width: 20px;
     height: 3px;
     background-color: #777777;
@@ -34,7 +62,7 @@
     transition: all 0.2s;
 }
 
-.middle-bar{
+.middle-bar {
     margin: 2px auto;
 }
 
@@ -70,7 +98,7 @@
     background-color: #777777;
 }
 
-.titel-gede{
+.titel-gede {
     font-family: 'Montserrat';
     font-weight: bolder;
     padding-bottom: 0;
@@ -78,18 +106,18 @@
     margin-top: 10px;
 }
 
-.titel-kecil{
+.titel-kecil {
     font-family: 'Montserrat';
     font-weight: light;
     font-size: 15px;
 }
 
-.nav-item{
+.nav-item {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.nav-RentNow{
+.nav-RentNow {
     background-color: black;
     color: white;
     transition: background-color .3s;
@@ -100,27 +128,31 @@
     color: black;
 }
 
-.nav-HowTo{
+.nav-HowTo {
     display: inline-block;
 }
 
 .navbar-toggler::after {
     content: "";
     position: fixed;
-    top: 50px; /* Awal dari margin-top 50px */
+    top: 50px;
+    /* Awal dari margin-top 50px */
     left: 0;
     width: 100%;
-    height: calc(100%); /* Sesuaikan tinggi sesuai margin-top akhir */
+    height: calc(100%);
+    /* Sesuaikan tinggi sesuai margin-top akhir */
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     opacity: 0;
     visibility: hidden;
     transition: top 0.3s, opacity 0.3s, visibility 0.3s;
-    z-index: -1; /* Posisikan di belakang tombol */
+    z-index: -1;
+    /* Posisikan di belakang tombol */
 }
 
 .navbar-toggler:not(.collapsed)::after {
-    top: 204px; /* Akhir dari margin-top 204px */
+    top: 204px;
+    /* Akhir dari margin-top 204px */
     opacity: 1;
     visibility: visible;
     z-index: 1000;
@@ -132,17 +164,18 @@
         top: 50px;
         opacity: 0;
     }
+
     100% {
         top: 204px;
         opacity: 1;
     }
 }
 
-.img-fluid{
+.img-fluid {
     width: 700px;
 }
 
-.coba-rent{
+.coba-rent {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,9 +186,9 @@
 
 /*HEADER 1*/
 
-.header1{
+.header1 {
     background: rgb(252, 239, 165);
-    background: linear-gradient(0deg, #d9985c 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, #d9985c 0%, rgba(255, 255, 255, 1) 100%);
     width: 100%;
     height: 350px;
     border-radius: 40px;
@@ -186,6 +219,7 @@
         margin-right: 60px;
     }
 }
+
 @media screen and (min-width: 414px) {
     .container-kalimat {
         margin-left: 60px;
@@ -208,6 +242,7 @@
     gap: 10px;
     margin-top: 0px;
 }
+
 .btn-rentnow {
     z-index: 1;
     border: none;
@@ -235,11 +270,46 @@
     background-color: transparent;
     transition: color .2s;
     font-size: 16px;
-    cursor: pointer; /* Menunjukkan bahwa ini adalah tombol */
+    cursor: pointer;
 }
 
 .btn-BacaKetentuan:hover {
     color: white;
+}
+
+.swal2-popup {
+    border-radius: 20px !important;
+}
+
+
+.swal2-confirm, .swal2-deny {
+    border-radius: 20px !important;
+}
+
+.my-confirm-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.my-deny-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.my-confirm-button:hover {
+    background-color: #45a049;
+}
+
+.my-deny-button:hover {
+    background-color: #e57373;
 }
 
 h2#swal2-title {
@@ -257,7 +327,7 @@ div#swal2-html-container {
     }
 }
 
-.circles{
+.circles {
     position: absolute;
     top: 0;
     left: 0;
@@ -266,7 +336,7 @@ div#swal2-html-container {
     overflow: hidden;
 }
 
-.circles li{
+.circles li {
     position: absolute;
     display: block;
     list-style: none;
@@ -275,10 +345,10 @@ div#swal2-html-container {
     background: rgba(255, 255, 255, 0.178);
     animation: animate 25s linear infinite;
     bottom: -150px;
-    
+
 }
 
-.circles li:nth-child(1){
+.circles li:nth-child(1) {
     left: 25%;
     width: 80px;
     height: 80px;
@@ -286,7 +356,7 @@ div#swal2-html-container {
 }
 
 
-.circles li:nth-child(2){
+.circles li:nth-child(2) {
     left: 10%;
     width: 20px;
     height: 20px;
@@ -294,14 +364,14 @@ div#swal2-html-container {
     animation-duration: 12s;
 }
 
-.circles li:nth-child(3){
+.circles li:nth-child(3) {
     left: 70%;
     width: 20px;
     height: 20px;
     animation-delay: 4s;
 }
 
-.circles li:nth-child(4){
+.circles li:nth-child(4) {
     left: 40%;
     width: 60px;
     height: 60px;
@@ -309,28 +379,28 @@ div#swal2-html-container {
     animation-duration: 18s;
 }
 
-.circles li:nth-child(5){
+.circles li:nth-child(5) {
     left: 65%;
     width: 20px;
     height: 20px;
     animation-delay: 0s;
 }
 
-.circles li:nth-child(6){
+.circles li:nth-child(6) {
     left: 75%;
     width: 110px;
     height: 110px;
     animation-delay: 3s;
 }
 
-.circles li:nth-child(7){
+.circles li:nth-child(7) {
     left: 35%;
     width: 150px;
     height: 150px;
     animation-delay: 7s;
 }
 
-.circles li:nth-child(8){
+.circles li:nth-child(8) {
     left: 50%;
     width: 25px;
     height: 25px;
@@ -338,7 +408,7 @@ div#swal2-html-container {
     animation-duration: 45s;
 }
 
-.circles li:nth-child(9){
+.circles li:nth-child(9) {
     left: 20%;
     width: 15px;
     height: 15px;
@@ -346,7 +416,7 @@ div#swal2-html-container {
     animation-duration: 35s;
 }
 
-.circles li:nth-child(10){
+.circles li:nth-child(10) {
     left: 85%;
     width: 150px;
     height: 150px;
@@ -356,13 +426,13 @@ div#swal2-html-container {
 
 @keyframes animate {
 
-    0%{
+    0% {
         transform: translateY(0) rotate(0deg);
         opacity: 1;
         border-radius: 0;
     }
 
-    100%{
+    100% {
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
@@ -381,26 +451,28 @@ div#swal2-html-container {
     margin-right: 50px;
 }
 
-.header2 > div{
+.header2>div {
     flex: 1;
 }
 
-.gambar1{
+.gambar1 {
     width: 50px;
     margin-bottom: 35px;
 }
 
-.gambar2{
+.gambar2 {
     width: 50px;
     margin-bottom: 35px;
 }
 
-.gambar3{
+.gambar3 {
     width: 50px;
     margin-bottom: 35px;
 }
 
-.kotak1, .kotak2, .kotak3 {
+.kotak1,
+.kotak2,
+.kotak3 {
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -417,7 +489,7 @@ div#swal2-html-container {
         margin-right: 40px;
     }
 
-    .gambar1{
+    .gambar1 {
         margin-bottom: 50px;
     }
 }
@@ -446,7 +518,10 @@ div#swal2-html-container {
     color: black;
 }
 
-.email img, .wa img, .channel img, .github img{
+.email img,
+.wa img,
+.channel img,
+.github img {
     width: 35px;
     padding-right: 10px;
 }
@@ -464,7 +539,7 @@ div#swal2-html-container {
         padding-left: 0px;
         padding-top: 30px;
     }
-    
+
     .bg-copyright {
         background-color: #f4f4f4;
         width: auto;
@@ -481,7 +556,10 @@ div#swal2-html-container {
         padding-left: 0px;
     }
 
-    .email img, .wa img, .github img, .channel img {
+    .email img,
+    .wa img,
+    .github img,
+    .channel img {
         width: 35px;
         padding-right: 10px;
     }
